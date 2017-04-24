@@ -9,23 +9,19 @@ prose:
     - /themes
   metadata:
     content/post:
-      - name: "layout"
+      - name: "template"
         field:
           element: "hidden"
-          value: "post"
-      - name: "published"
+          value: "post-page.html"
+      - name: "Date"
         field:
-          element: "hidden"
-          value: "true"
+          element: "text"
+          label: "Date"
+          placeholder: "Date in format yyyy-mm-dd."
       - name: "created"
         field:
           element: "hidden"
           value: "true"
-      - name: "h1"
-        field:
-          element: "text"
-          label: "Title"
-          placeholder: "The title that your readers see on the page."
       - name: "keyword"
         field:
           element: "text"
