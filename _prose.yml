@@ -8,7 +8,7 @@ prose:
     - /layouts
     - /themes
   metadata:
-    content/blog:
+    content/post:
       - name: "title"
         field:
           element: "text"
