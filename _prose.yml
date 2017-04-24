@@ -27,9 +27,8 @@ prose:
           value: "hero-page.css"
       - name: "Date"
         field:
-          element: "text"
-          label: "Date"
-          placeholder: "Date in format yyyy-mm-dd."
+          element: "hidden"
+          value: CURRENT_DATETIME
       - name: "created"
         field:
           element: "hidden"
