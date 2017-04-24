@@ -9,6 +9,10 @@ prose:
     - /themes
   metadata:
     content/post:
+      -name: 'published'
+        field:
+          element: 'hidden'
+          value: true
       - name: "template"
         field:
           element: "hidden"
