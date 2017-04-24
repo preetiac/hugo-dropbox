@@ -21,6 +21,10 @@ prose:
         field:
           element: "hidden"
           value: "hero-page.js"
+      - name: "custom_css"
+        field:
+          element: "hidden"
+          value: "hero-page.css"
       - name: "Date"
         field:
           element: "text"
