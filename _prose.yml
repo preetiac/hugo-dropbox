@@ -57,8 +57,10 @@ prose:
           element: "multiselect"
           label: "Add Categories"
           options:
-            - name: "Blog"
-              value: "blog"
+            - name: "Dropbox"
+              value: "Dropbox"
+            - name: "Post"
+              value: "post"
           alterable: True
     static:
       - name: "permalink"
