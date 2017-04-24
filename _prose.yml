@@ -24,29 +24,40 @@ prose:
           element: "textarea"
           label: "Author"
           placeholder: "Must be in format FirstnameLastname - e.g. JohnGriffin"
-      - name: "slug"
-        field:
-          element: "text"
-          label: "Slug"
-          placeholder: "The last part of the URL."
       - name: "date"
         field:
           element: "text"
           label: "Date"
           placeholder: "Date in format yyyy-mm-dd."
-      - name: "header_image"
-        field:
-          element: "text"
-          label: "Header Image"
-          placeholder: "Full-width header image - e.g. /images/myfile.png"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           options:
-            - name: "Blog"
-              value: "blog"
+            - name: "Dropbox"
+              value: "Dropbox"
+            - name: "post"
+              value: "Post"
           alterable: True
+      - name: "template"
+        field:
+          element: "text"
+          label: "template"
+          value: "post-page.html"
+          placeholder: "template name - e.g. myTemplate.html
+      - name: "variant_id"
+        field:
+          element: "text"
+          label: "variant_id"
+          placeholder: "Enter variant_id"
+      - name: "custom_js"
+        field:
+          element: "hidden"
+          value: ["hero-page.js"]
+     - name: "custom_css"
+        field:
+          element: "hidden"
+          value: ["hero-page.css"]
     static:
       - name: "url"
         field:
