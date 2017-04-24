@@ -29,15 +29,6 @@ prose:
         field:
           element: "hidden"
           value: CURRENT_DATETIME
-      - name: "created"
-        field:
-          element: "hidden"
-          value: "true"
-      - name: "keyword"
-        field:
-          element: "text"
-          label: "Keywords"
-          placeholder: "Seperate keywords with a comma."
       - name: "description"
         field:
           element: "text"
