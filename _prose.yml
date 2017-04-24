@@ -20,11 +20,11 @@ prose:
       - name: "custom_js"
         field:
           element: "hidden"
-          value: "hero-page.js"
+          value: ["hero-page.js"]
       - name: "custom_css"
         field:
           element: "hidden"
-          value: "hero-page.css"
+          value: ["hero-page.css"]
       - name: "Date"
         field:
           element: "hidden"
