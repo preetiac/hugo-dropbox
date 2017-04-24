@@ -13,6 +13,10 @@ prose:
         field:
           element: "hidden"
           value: "post-page.html"
+      - name: "variant_id"
+        field:
+          element: "hidden"
+          value: "12345ADS"
       - name: "Date"
         field:
           element: "text"
@@ -32,26 +36,10 @@ prose:
           element: "text"
           label: "Description"
           placeholder: "The meta description."
-      - name: "url"
-        field:
-          element: "text"
-          label: "URL"
-          placeholder: "The address of a page."
-      - name: "LinkTitle"
-        field:
-          element: "text"
-          label: "Link Title"
-          placeholder: "The text that appears in a menu link to this page."
-      - name: "draft"
-        field:
-          element: "checkbox"
-          label: "Set as Draft"
-          help: "Drafts are not published."
-          value: false
-      - name: "categories"
+      - name: "Tags"
         field:
           element: "multiselect"
-          label: "Add Categories"
+          label: "Add Tags"
           options:
             - name: "Dropbox"
               value: "Dropbox"
