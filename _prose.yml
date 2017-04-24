@@ -1,6 +1,6 @@
 prose:
   rooturl: 'content'
-  media: 'static/img'
+  media: 'static/images'
   ignore:
     - config.yaml
     - README.md
@@ -9,58 +9,60 @@ prose:
     - /themes
   metadata:
     content/post:
-      - name: "title"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+      - name: "created"
+        field:
+          element: "hidden"
+          value: "true"
+      - name: "h1"
         field:
           element: "text"
           label: "Title"
           placeholder: "The title that your readers see on the page."
+      - name: "keyword"
+        field:
+          element: "text"
+          label: "Keywords"
+          placeholder: "Seperate keywords with a comma."
       - name: "description"
         field:
-          element: "textarea"
+          element: "text"
           label: "Description"
-          placeholder: "The meta description - often used by Google in search results page."
-      - name: "author"
-        field:
-          element: "textarea"
-          label: "Author"
-          placeholder: "Must be in format FirstnameLastname - e.g. JohnGriffin"
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          placeholder: "Date in format yyyy-mm-dd."
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          options:
-            - name: "Dropbox"
-              value: "Dropbox"
-            - name: "post"
-              value: "Post"
-          alterable: True
-      - name: "template"
-        field:
-          element: "text"
-          label: "template"
-          value: "post-page.html"
-          placeholder: "template name - e.g. myTemplate.html
-      - name: "variant_id"
-        field:
-          element: "text"
-          label: "variant_id"
-          placeholder: "Enter variant_id"
-      - name: "custom_js"
-        field:
-          element: "hidden"
-          value: ["hero-page.js"]
-     - name: "custom_css"
-        field:
-          element: "hidden"
-          value: ["hero-page.css"]
-    static:
+          placeholder: "The meta description."
       - name: "url"
         field:
           element: "text"
-          label: "Url"
+          label: "URL"
+          placeholder: "The address of a page."
+      - name: "LinkTitle"
+        field:
+          element: "text"
+          label: "Link Title"
+          placeholder: "The text that appears in a menu link to this page."
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Set as Draft"
+          help: "Drafts are not published."
+          value: false
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Categories"
+          options:
+            - name: "Blog"
+              value: "blog"
+          alterable: True
+    static:
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
           value: ""
