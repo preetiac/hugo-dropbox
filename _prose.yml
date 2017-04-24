@@ -44,6 +44,11 @@ prose:
             - name: "Post"
               value: "post"
           alterable: True
+      - name: 'published'
+        field:
+          element: 'checkbox'
+          value: true
+          label: 'Published?'
     static:
       - name: "permalink"
         field:
