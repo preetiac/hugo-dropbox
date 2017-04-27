@@ -55,12 +55,3 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
-   content/hero:
-      - name: "template"
-        field:
-          element: "hidden"
-          value: "hero-page.html"
-      - name: "variant_id"
-        field:
-          element: "hidden"
-          value: "HERO1234"
