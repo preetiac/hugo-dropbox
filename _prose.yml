@@ -9,6 +9,10 @@ prose:
     - /themes
   metadata:
     content/post:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
       - name: "template"
         field:
           element: "hidden"
