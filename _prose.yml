@@ -54,6 +54,15 @@ prose:
           element: 'checkbox'
           value: true
           label: 'Published?'
+    content/hero:
+      - name: "template"
+        field:
+          element: "hidden"
+          value: "post-page.html"
+      - name: "variant_id"
+        field:
+          element: "hidden"
+          value: "1234ASD"
     static:
       - name: "permalink"
         field:
