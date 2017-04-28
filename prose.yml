@@ -1,69 +1,108 @@
 prose:
-  rooturl: 'content/post'
+  rooturl: 'content'
   media: 'static/img'
   ignore:
-    - index.html
+    - _prose.yml
     - config.yaml
-    - gulpfile.js
-    - .gitignore
     - README.md
-    - /archetypes
-    - /data
-    - /layouts
-    - /themes
+    - config.toml
+    - data
+    - layouts
+    - themes
+    - static
   metadata:
-    content/post:
-      - name: "layout"
+    content/post :
+      - name: "template"
         field:
           element: "hidden"
-          value: "post"
-      - name: "published"
+          value: "post-page.html"
+      - name: "variant_id"
         field:
           element: "hidden"
-          value: "true"
-      - name: "created"
+          value: "1234ASD"
+      - name: "custom_js"
         field:
           element: "hidden"
-          value: "true"
-      - name: "h1"
+          value: ["hero-page.js"]
+      - name: "custom_css"
+        field:
+          element: "hidden"
+          value: ["hero-page.css"]
+      - name: "Date"
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "title"
         field:
           element: "text"
           label: "Title"
-          placeholder: "The title that your readers see on the page."
-      - name: "keyword"
-        field:
-          element: "text"
-          label: "Keywords"
-          placeholder: "Seperate keywords with a comma."
+          placeholder: "The Page Title "
       - name: "description"
         field:
           element: "text"
           label: "Description"
           placeholder: "The meta description."
-      - name: "url"
-        field:
-          element: "text"
-          label: "URL"
-          placeholder: "The address of a page."
-      - name: "LinkTitle"
-        field:
-          element: "text"
-          label: "Link Title"
-          placeholder: "The text that appears in a menu link to this page."
-      - name: "draft"
-        field:
-          element: "checkbox"
-          label: "Set as Draft"
-          help: "Drafts are not published."
-          value: false
-      - name: "categories"
+      - name: "Tags"
         field:
           element: "multiselect"
-          label: "Add Categories"
+          label: "Add Tags"
           options:
-            - name: "Blog"
-              value: "blog"
+            - name: "Dropbox"
+              value: "Dropbox"
+            - name: "Post"
+              value: "post"
           alterable: True
+      - name: 'published'
+        field:
+          element: 'checkbox'
+          value: true
+          label: 'Published?'
+    content/hero:
+      - name: "template"
+        field:
+          element: "hidden"
+          value: "hero-page.html"
+      - name: "variant_id"
+        field:
+          element: "hidden"
+          value: "1234HERO"
+      - name: "custom_js"
+        field:
+          element: "hidden"
+          value: ["hero-page.js"]
+      - name: "custom_css"
+        field:
+          element: "hidden"
+          value: ["hero-page.css"]
+      - name: "Date"
+        field:
+          element: "hidden"
+          value: CURRENT_DATETIME
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "The Page Title "
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          placeholder: "The meta description."
+      - name: "Tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          options:
+            - name: "Dropbox"
+              value: "Dropbox"
+            - name: "hero"
+              value: "hero"
+          alterable: True
+      - name: 'published'
+        field:
+          element: 'checkbox'
+          value: true
+          label: 'Published?'
     static:
       - name: "permalink"
         field:
