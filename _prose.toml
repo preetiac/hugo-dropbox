@@ -1,5 +1,5 @@
 [prose]
-ignore = ["_prose.yml", "config.yaml", "README.md", "dropbox/config.toml", "dropbox/data", "dropbox/layouts", "dropbox/themes", "dropbox/static"]
+ignore = ["_prose.yml", "config.yaml", "README.md", "/config.toml", "/data", "/layouts", "/themes", "/static"]
 media = "static/img"
 rooturl = ""
 [prose.metadata]
@@ -20,17 +20,13 @@ rooturl = ""
 	name = "custom_js"
     [dropbox/content/post.field]
         element = "hidden"
-        value = "1234ASD"
-    [[dropbox/content/post.value]]
-        "hero-page.css"
+        value = "hero-page.js"
 
 [[dropbox/content/post]]
 	name = "custom_css"
 	[dropbox/content/post.field]
 	 element = "hidden"
-        value = "1234ASD"
-    [[dropbox/content/post.value]]
-        "hero-page.css"
+        value ="hero-page.css"
 
 [[dropbox/content/post]]
 	name = "Date"
