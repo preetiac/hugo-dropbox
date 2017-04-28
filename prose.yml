@@ -1,13 +1,9 @@
 prose:
-  rooturl: 'content/post'
+  rooturl: 'content'
   media: 'static/img'
   ignore:
-    - index.html
-    - config.yaml
-    - gulpfile.js
-    - .gitignore
+    - config.yml
     - README.md
-    - /archetypes
     - /data
     - /layouts
     - /themes
