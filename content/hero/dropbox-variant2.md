@@ -1,21 +1,20 @@
 +++
+title = "Dropbox New Variant"
+date = "2017-03-24T11:18:47-07:00"
+template = "variant-2-page.html"
 tags = ["Dropbox","hero"]
 variant_id = "2"
 custom_js = ["hero-page.js"]
 custom_css = ["hero-page.css"]
-
-title = "Dropbox New Variant"
-date = "2017-03-24T11:18:47-07:00"
-template = "variant-2-page.html"
 
 [config]
   cta_color = "#F1513E"
   subheadline = "Keep Your Team Productive & Your Data Safe"
 
   [config.designer]
+    quote = "“Dropbox Business gives us a secure, unified place to store all of our work, and helps reverse the friction that can come with having hundreds of computers in one company.”"
     image = "../../img/profile-image.jpg"
     name = "Kristen Roberts, Art Director, IDEO"
-    quote = "“Dropbox Business gives us a secure, unified place to store all of our work, and helps reverse the friction that can come with having hundreds of computers in one company.”"
 
   [config.hero]
     image = "../../img/desk.jpg"
