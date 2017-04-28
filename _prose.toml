@@ -1,5 +1,5 @@
 [prose]
-ignore = ["_prose.yml", "config.yaml", "README.md", "dropbox/config.toml", "dropbox/data", "dropbox/layouts", "dropbox/themes", "dropbox/static"]
+ignore = ["_prose.yml", "config.yaml", "README.md", "/config.toml", "/data", "/layouts", "/themes", "/static"]
 media = "static/img"
 rooturl = ""
 [prose.metadata]
