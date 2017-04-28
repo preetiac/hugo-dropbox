@@ -1,5 +1,5 @@
 prose:
-  rooturl: 'content'
+  rooturl : 'content'
   media: 'static/img'
   ignore:
     - config.yaml
